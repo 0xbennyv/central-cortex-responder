@@ -1,0 +1,28 @@
+{
+    "name": "SOPHOS Central BlockList",
+    "version": "0.1",
+    "author": "Ben Verschaeren",
+    "url": "https://github.com/0xBennyV",
+    "license": "AGPL-V3",
+    "description": "Used for connecting into the XG SOAR Connector",
+    "dataTypeList": ["thehive:case_artifact"],
+    "command": "sophos-central-blocklist/sophos-central-blocklist.py",
+    "baseConfig": "sophos-central-blocklist",
+    "configurationItems": [
+      {
+        "name": "sophos_central_tenant_secret",
+        "description": "API Secret from SOPHOS Central Tenant",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "sophos_central_tenant_clientid",
+        "description": "API Client ID from SOPHOS Central Tenant",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ]
+}
+
